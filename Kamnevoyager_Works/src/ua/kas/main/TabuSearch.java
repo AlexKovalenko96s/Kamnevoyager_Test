@@ -36,7 +36,7 @@ public class TabuSearch {
 
 				int newBestCost = tspEnviromnet.getObjectiveFunctionValue(newBestSol);
 
-				if ((newBestCost > bestCost || firstNeighbor) && tabuList.tabuList[i][j] == 0) {
+				if ((newBestCost < bestCost || firstNeighbor) && tabuList.tabuList[i][j] == 0) {
 					firstNeighbor = false;
 					city1 = i;
 					city2 = j;

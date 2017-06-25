@@ -9,8 +9,8 @@ public class TabuList {
 	}
 
 	public void tabuMove(int city1, int city2) {
-		tabuList[city1][city2] += 5;
-		tabuList[city2][city1] += 5;
+		tabuList[city1][city2] += 4;
+		tabuList[city2][city1] += 4;
 	}
 
 	public void decrementTabu() {
